@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+</head>
+<style>
+    body {
+        text-align: center;
+        color: wheat;
+        background-color: #000;
+        animation: myani 5s linear infinite;
+        animation-duration: 2secs;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("/image/back\ 4.jpg");
+        height: 100vh;
+    }
+
+    @keyframes myani {
+        0% {
+            background-image: url("/image/back\ 3.jpg");
+            background-repeat: no-repeat;
+        }
+
+        50% {
+            background-image: url("/image/back\ 2.jpg");
+            background-repeat: no-repeat;
+        }
+
+        100% {
+            background-image: url("/image/back\ 1.jpg");
+            background-repeat: no-repeat;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 style="color: wheat;"> Work To-do </h1>
+
+        </div>
+        <div>
+            <p id="first">Text into the input field to add items to your list</p>
+            <p id="second">Click the item to mark it as complete</p>
+            <p id="third">Click the X to remove the item from the list</p>
+        </div>
+        <div>
+            <input type="text" id="userInput" placeholder="New item" maxlength="27">
+            <button id="enter"><i class="fas fa-pencil-alt"></i></button>
+        </div>
+   
+            <ul>
+                
+            </ul>
+      
+    </div>
+    <script src="script/js.js">
+
+    </script>
+</body>
+
+</html>
